@@ -1101,27 +1101,27 @@ video {
 }
 
 .bg-Aboutus_Hero {
-  background-image: url('/src/assets/about_us_hero_background.png');
+  background-image: url('assets/about_us_hero_background.png');
 }
 
 .bg-Consultation {
-  background-image: url('/src/assets/consultation_background.png');
+  background-image: url('assets/consultation_background.png');
 }
 
 .bg-Home_Hero {
-  background-image: url(/src/assets/HeroBackgroundHomepage.png);
+  background-image: url(assets/HeroBackgroundHomepage.png);
 }
 
 .bg-Penghargaan {
-  background-image: url('/src/assets/penghargaan_background.png');
+  background-image: url('assets/penghargaan_background.png');
 }
 
 .bg-Profile_Hero {
-  background-image: url('/src/assets/profile_hero_background.png');
+  background-image: url('assets/profile_hero_background.png');
 }
 
 .bg-Quote {
-  background-image: url('/src/assets/quote_background.png');
+  background-image: url('assets/quote_background.png');
 }
 
 .bg-cover {
