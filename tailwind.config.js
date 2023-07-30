@@ -7,12 +7,12 @@ module.exports = {
         hamburger: "left center",
       },
       backgroundImage: {
-        Home_Hero: "url(assets/HeroBackgroundHomepage.png)",
-        Penghargaan: "url('assets/penghargaan_background.png')",
-        Quote: "url('assets/quote_background.png')",
-        Consultation: "url('assets/consultation_background.png')",
-        Profile_Hero: "url('assets/profile_hero_background.png')",
-        Aboutus_Hero: "url('assets/about_us_hero_background.png')",
+        Home_Hero: "url(../assets/HeroBackgroundHomepage.png)",
+        Penghargaan: "url('../assets/penghargaan_background.png')",
+        Quote: "url('../assets/quote_background.png')",
+        Consultation: "url('../assets/consultation_background.png')",
+        Profile_Hero: "url('../assets/profile_hero_background.png')",
+        Aboutus_Hero: "url('../assets/about_us_hero_background.png')",
       },
       spacing: {
         desktop: "250px",
