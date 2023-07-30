@@ -4,7 +4,7 @@
 > everything can be accessed from the **src**
 
 ├── src  
-    ├── assets (folder contain all of the images and icons)  
+&#8195;├── assets (folder contain all of the images and icons)  
     ├── dist  
         ├── output.css (output style, tailwind)  
     ├── js  
