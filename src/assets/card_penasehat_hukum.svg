@@ -1,0 +1,25 @@
+<svg width="70" height="48" viewBox="0 0 70 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<g id="Rectangle 430">
+<mask id="path-1-inside-1_85_207" fill="white">
+<rect x="0.5" y="0.347656" width="42" height="41" rx="2"/>
+</mask>
+<rect x="0.5" y="0.347656" width="42" height="41" rx="2" stroke="#F6FAFF" stroke-width="6" mask="url(#path-1-inside-1_85_207)"/>
+</g>
+<g id="Rectangle 431">
+<mask id="path-2-inside-2_85_207" fill="white">
+<path d="M39.5161 10.7129C39.5161 10.1606 39.9638 9.71289 40.5161 9.71289H58C64.6274 9.71289 70 15.0855 70 21.7129V40.3258C70 40.8781 69.5523 41.3258 69 41.3258H40.5161C39.9638 41.3258 39.5161 40.8781 39.5161 40.3258V10.7129Z"/>
+</mask>
+<path d="M39.5161 10.7129C39.5161 10.1606 39.9638 9.71289 40.5161 9.71289H58C64.6274 9.71289 70 15.0855 70 21.7129V40.3258C70 40.8781 69.5523 41.3258 69 41.3258H40.5161C39.9638 41.3258 39.5161 40.8781 39.5161 40.3258V10.7129Z" stroke="#F6FAFF" stroke-width="6" mask="url(#path-2-inside-2_85_207)"/>
+</g>
+<g id="Rectangle 432">
+<mask id="path-3-inside-3_85_207" fill="white">
+<path d="M51.9355 9.71289H58.0001C64.6275 9.71289 70.0001 15.0855 70.0001 21.7129V24.5194C70.0001 25.0716 69.5524 25.5194 69.0001 25.5194H54.9355C53.2787 25.5194 51.9355 24.1762 51.9355 22.5194V9.71289Z"/>
+</mask>
+<path d="M51.9355 9.71289H58.0001C64.6275 9.71289 70.0001 15.0855 70.0001 21.7129V24.5194C70.0001 25.0716 69.5524 25.5194 69.0001 25.5194H54.9355C53.2787 25.5194 51.9355 24.1762 51.9355 22.5194V9.71289Z" stroke="#F6FAFF" stroke-width="6" mask="url(#path-3-inside-3_85_207)"/>
+</g>
+<circle id="Ellipse 9" cx="16.852" cy="39.5708" r="6.27778" fill="#0B2A44" stroke="#F6FAFF" stroke-width="3"/>
+<circle id="Ellipse 10" cx="55.7407" cy="39.5708" r="6.27778" fill="#0B2A44" stroke="#F6FAFF" stroke-width="3"/>
+<line id="Line 23" x1="39.9814" y1="24.2188" x2="15.7592" y2="24.2188" stroke="#F6FAFF" stroke-width="3" stroke-linecap="round"/>
+</g>
+</svg>

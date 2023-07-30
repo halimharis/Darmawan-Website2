@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width: 900) {
+  .navlink::after {
+    display: none;
+  }
+}
+
+.navlink::after {
+  content: "";
+  display: none;
+  width: 1.5rem;
+  height: 0.25rem;
+  background-color: transparent;
+}
+
+.navlink.active {
+  font-weight: 600;
+}
+
+.navlink.active::after {
+  background-color: rgb(246 250 255);
+}

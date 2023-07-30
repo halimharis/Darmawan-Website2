@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>✨ Scratch Project ✨</title>
+      <!-- Font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <!-- 👇 css code file 👇 -->
+      <link href="../dist/output.css" rel="stylesheet" />
+    </head>
+    <body>
+      <!-- NAVBAR -->
+
+      <div
+        class="absolute xl:flex-col px-mobile xl:px-desktop w-full py-2 flex justify-between xl:justify-center items-center gap-5 z-40 font-Inter"
+      >
+        <img
+          src="./assets/profilebar_image.png"
+          class="w-9 xl:w-[77px] h-auto"
+        />
+
+        <label
+          for="navbar-toggler"
+          class="cursor-pointer flex flex-col gap-1 z-50 xl:hidden"
+        >
+          <input
+            id="navbar-toggler"
+            onchange="toggleNavbar()"
+            type="checkbox"
+            class="checked:bg-black z-50 origin-hamburger rounded-full checked:rotate-45 checked:translate-x-0 checked:-translate-y-[2px] transition-all navbar-toggler peer outline-none pointer-events-none peer checked:w-[calc(1.25*1.41421356237)] w-7 h-1 bg-white appearance-none"
+          />
+          <span
+            class="w-7 h-1 bg-white peer-checked:w-0 transition-all rounded-full"
+          ></span>
+          <span
+            class="peer-checked:bg-black z-50 origin-hamburger rounded-full w-7 h-1 bg-white transition-all peer-checked:-rotate-45 peer-checked:translate-x-0 peer-checked:translate-y-[2px] peer-checked:w-[calc(1.25*1.41421356237)]"
+          ></span>
+        </label>
+        <nav
+          class="absolute justify-center items-center gap-4 xl:bg-transparent -translate-y-full xl:translate-y-0 xl:relative xl:h-full xl:w-full w-screen h-screen bg-darkGray top-0 left-0 transition-all duration-500 xl:border-t-2 xl:border-b-2 xl:border-darkGray flex xl:justify-between xl:py-5"
+        >
+          <div class="flex flex-col xl:flex-row gap-6">
+            <a
+              href="index.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Halaman Utama</a
+            >
+            <a
+              href="profil.html"
+              class="navlink active text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Profil</a
+            >
+            <a
+              href="tentang-kami.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Tentang Kami</a
+            >
+            <a
+              href="kontak.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Kontak</a
+            >
+          </div>
+          <div class="xl:flex gap-8 hidden">
+            <div class="flex justify-center items-center gap-3 font-Inter">
+              <img src="./assets/callwithborder2.png" class="w-16 h-16" />
+              <div class="flex flex-col">
+                <span class="text-yellow text-lg">Call us on:</span>
+                <span class="font-semibold text-2xl text-white"
+                  >0811-633-355</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-3 font-Inter">
+              <img src="./assets/mailwithborder2.png" class="w-16 h-16" />
+              <div class="flex flex-col">
+                <span class="text-yellow text-lg">Email us:</span>
+                <span class="font-semibold text-2xl text-white"
+                  >dyp.lawoffice@gmail.com</span
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- HERO -->
+
+      <div
+        class="min-h-screen xl:h-[calc(0.56_*_100vw)] bg-Profile_Hero bg-center bg-cover flex items-end text-bg-white px-mobile pt-24 xl:px-80"
+      >
+        <div
+          class="flex flex-col xl:flex-row items-center gap-12 xl:gap-4 justify-between mb-[106px]"
+        >
+          <div class="basis-4/12 relative">
+            <img src="./assets/profile_hero_pict.png" class="relative z-20" />
+            <div
+              class="absolute w-full h-full border border-orange-300 -top-8 -left-8 z-10 hidden xl:block"
+            ></div>
+          </div>
+          <div class="flex flex-col basis-7/12">
+            <h2
+              class="text-3xl xl:text-title leading-tight font-Cormorant-Garamond mb-1 text-slate-50 font-bold"
+            >
+              DARMAWAN YUSUF, S.H., S.E., M.Pd., M.H., CTLA., Mediator
+            </h2>
+            <img
+              src="./assets/smalldetail-white.svg"
+              class="h-[44px] w-[95px] mb-8"
+            />
+            <p
+              class="text-xl xl:text-description font-medium font-Cormorant-Garamond leading-snug text-justify text-slate-50"
+            >
+              Pimpinan utama kantor pengacara DARMAWAN YUSUF. SH., SE., M.Pd.,
+              M.H., CTLA., Mediator & ASSOCIATES lahir di Kota Medan, Provinsi
+              Sumatera Utara. Dia adalah anak ketiga dari empat bersaudara dan
+              saat ini aktif sebagai Penasehat Hukum Tetap (Legal Consultant)
+              Tenaga Ahli Kepresidenan Bidang Politik, Hukum, dan Keamanan RI
+              Dr. Lenis Kogoya, M.Hum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+
+      <div
+        class="py-12 px-mobile xl:py-sectionSpace xl:px-desktop flex flex-col items-center text-blue"
+      >
+        <h2
+          class="text-3xl xl:text-title font-Cormorant-Garamond font-bold leading-tight mb-5"
+        >
+          Tentang Darmawan
+        </h2>
+        <img
+          src="./assets/smalldetail2-black.svg"
+          class="w-[95px] h-[44px] mb-10"
+        />
+        <p
+          class="text-xl xl:text-h6 font-medium xl:font-normal font-Cormorant-Garamond text-justify text-blue"
+        >
+          Tamat SMA di Sekolah Wage Rudolf. Supratman 1 (WRS 1) Medan thn 2005,
+          Menyelesaikan kuliah D3 Ahli Media Progam studi Marketing of
+          Management di Perguruan Tinggi di medan (A.md), Menyelesaikan Studi S1
+          pada Fakultas Ekonomi di Medan (SE), Menyelesaikan Studi S2 Pasca
+          Sarjana Magister Pendidikan di Jakarta (M.Pd), Menyelesaikan Studi S1
+          Fakultas Hukum Universitas di Medan (SH), Menyelesaikan Studi Master
+          Hukum S2 Pasca Sarjana ilmu Hukum Universitas di Medan (MH),
+          Menyelesaikan Pendididikan Mediator di UGM Universitas Negeri Gadjah
+          Mada Yogyakarta ( Med), Menyelesaikan Pendidikan Ahli Konsultan Hukum
+          Perpajakan Pengadilan Pajak di jakarta Certificate TAX LAW Advisor
+          (CTLA), sekarang dalam proses sedang menyelesaikan studi S3 Doctor
+          Hukum pada Fakultas Hukum Universitas Negeri Sumatera Utara (USU) Dan
+          Juga sekarang aktif mengajar sebagai Dosen Pengajar Progam Studi Ilmu
+          Hukum.
+        </p>
+        <br />
+        <p
+          class="text-xl xl:text-h6 font-medium xl:font-normal font-Cormorant-Garamond text-justify text-blue"
+        >
+          Pendidikan non formal, formal dan profesi yang diikuti antara lain,
+          pendidikan perlatihan wirausaha thn 2012, pendidikan management,
+          pelatihan desain computer, serta berbagai seminar hukum, ekonomi,
+          personalia, tenaga kerja, Lulus Pendidikan Mediator Resmi
+          Bersertifikat Mahkamah Agung, Alumni Mediator UGM Universitas Gajah
+          Mada di Yogyakarta, Lulus Pendidikan Ahli Hukum Perpajakan dan
+          mendapat SK Pengangkatan dari Ketua Hakim Pengadilan Pajak Republik
+          Indonesia Kementrian Keuangan RI sebagai Kuasa Resmi Hukum Perpajakan
+          Pengadilan Pajak.
+        </p>
+        <br />
+        <p
+          class="text-xl xl:text-h6 font-medium xl:font-normal font-Cormorant-Garamond text-justify text-blue"
+        >
+          Berbagai perkara yang pernah ditangani antara lain: kasus-kasus PT.
+          Palmec Surya Lestari, PT. Anugrah Sibolga Lestari (ASL), Pusat
+          Koperasi TNI Angkatan Darat Kartika A Bukit Barisan (PUSKOPAD) KODAM
+          I/BB, PT. Sihitang Raya Baru, Asosiasi Pengusaha Indonesia (APINDO)
+          Sumatera Utara, Yayasan Kristen Methodist Moria Asahan, Methodist 2
+          Kisaran, PT. Dua Puluh Empat Jam Online (Uni Pin), PT. Saudara Semesta
+          Gemilang, PT. Bintang Terang Kontruksi, PT.Naga Jaya Abadi, PT. Cahaya
+          Andhika, PT. Karya Persada Smiling Ocean, PT. Smart Glove Indonesia
+          (SGI) (PMA Malaysia), J&T Ekspress, PT. Global IMOO Telekomunikasi
+          (IMOO), PT. Sumatera Squad Express, PT. Harum Segar Aromatic, PT. Sri
+          Makmur Abadi (PMA Malaysia) PT. Benua Samudra Cargo (BSK), PT. Emico
+          Indono, PT. Cahaya Mulia Logam, PT. Pixelindo Refil Centre, PT.
+          Printmate Indonesia, PT Sumatra Lintas Asia, PT. Asia Inti Rasa, PT.
+          RAM (AICE ES Krim – PMA China), PT Doremi, PT. Powerland Project
+          Solution (PMA China), PT Benua Logistik, Unit Jasa Angkutan Roda
+          Bhakti, PT. Roda Elang Sakti, PT. Baja Niaga, PT.SPI, PT. Bae Orbit
+          Senusantara, PT. Candra Meuble, PT. Sempurna Tetap Makmur, Kilang Padi
+          Malaysia, Kasus Pertanahan Sumatera Utara, Kasus Perceraian/ Peralihan
+          Harta dalam Rumah Tangga, Kasus Pidana, Kasus Perdata dan Kasus
+          Korupsi, beberapa kasus yang sedang dalam proses di Pengadilan Negeri
+          Medan, Pengadilan Tinggi Medan, Pengadilan Tata Usaha Negara Medan,
+          Pengadilan Agama Medan, Pengadilan Pajak Medan, Pengadilan Niaga
+          Medan, serta Pengadilan Tinggi Tata Usaha Negara Medan.
+        </p>
+        <br />
+        <p
+          class="text-xl xl:text-h6 font-medium xl:font-normal font-Cormorant-Garamond text-justify text-blue"
+        >
+          "Hingga saat ini masih aktif sebagai Penasehat Hukum Tetap (Legal
+          Consultant) Tenaga Ahli kepresiden RI Dr. Lenis Kogoya, M.Hum dan
+          berbagai perusahaan-perusahaan di sekitar Pulau Sumatera, Pulau Jawa,
+          Pulau Sulawesi, Pulau Kalimantan dan Pulau Papua.",
+        </p>
+        <div class="my-[120px] flex gap-8 flex-wrap justify-center">
+          <img src="./assets/about_pict1.png" />
+          <img src="./assets/about_pict2.png" />
+          <img src="./assets/about_pict3.png" />
+        </div>
+        <h2
+          class="text-3xl xl:text-title font-Cormorant-Garamond font-bold leading-tight mb-5"
+        >
+          ORGANISASI
+        </h2>
+        <img
+          src="./assets/smalldetail2-black.svg"
+          class="w-[95px] h-[44px] mb-5"
+        />
+        <h2
+          class="text-3xl xl:text-title font-Cormorant-Garamond font-bold leading-tight mb-16"
+        >
+          Antara Lain
+        </h2>
+        <div class="flex flex-col gap-8">
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">01.</span>
+            <p class="text-justify pl-7">
+              Pengurus (Vice President) Lions Club Medan Golden Estate periode
+              2015 – 2016 Charter 2rd
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">02.</span>
+            <p class="text-justify pl-7">
+              Ketua Bidang Penelitan, Pengembangan dan Pengkajian Organisasi DPP
+              Serikat Buruh Sejahtera Indonesia 1992 Pusat (SBSI 92) Periode
+              Tahun 2017 s/d sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">03.</span>
+            <p class="text-justify pl-7">
+              Ketua DPD Komite Wartawan Reformasi Indonesia (KWRI) Sumut Periode
+              2017 s/d 2022
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">04.</span>
+            <p class="text-justify pl-7">
+              Dewan Pengupahan ( Depeda ) Dinas Tenaga Kerja Disnaker Sumut
+              Periode Tahun 2017 s/d sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">05.</span>
+            <p class="text-justify pl-7">
+              Wakil Ketua Dewan Penasehat DPP Sergap Jakarta Tahun 2021 s/d
+              Sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">06.</span>
+            <p class="text-justify pl-7">
+              Pendiri Firma Pajak DAP – Tax Firm Darma Abadi & Partners Tahun
+              2021 s/d sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">07.</span>
+            <p class="text-justify pl-7">
+              Dewan Pembina Beladiri HAPKIDO Provinsi Banten Tahun 2021 s/d
+              sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">08.</span>
+            <p class="text-justify pl-7">
+              Wakil Ketua Bidang Hukum Dewan Pengurus Pusat PARNAS Tiga Pilar
+              Jakarta Pusat 2022 s/d sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">09.</span>
+            <p class="text-justify pl-7">
+              ketua Bidang Hukum / Legal Committee Lions Club International 307
+              – A2 Indonesia 2022 s/d Sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">10.</span>
+            <p class="text-justify pl-7">
+              Alumni Lemhanas RI Angkatan 1 tahun 2023
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">11.</span>
+            <p class="text-justify pl-7">
+              Pendiri dan Ketua Umum Dewan Pengurus Pusat (DPP) Lembaga Swadaya
+              Masyarakat Gebrak (Gerakan Bersatu Rakyat Anti Korupsi ) Tahun
+              2005 & 2020 s/d sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">12.</span>
+            <p class="text-justify pl-7">
+              Dosen Fakultas Hukum di NTU Academy University 2020 s/d sekarang
+            </p>
+          </div>
+          <div
+            class="border-b border-blue pb-8 flex xl:text-2xl font-semibold font-Open-Sans"
+          >
+            <span class="font-bold">13.</span>
+            <p class="text-justify pl-7">
+              Ketua Dewan Pengawas Lembaga Perlindungan Anak Indonesia ( Kak
+              Seto ) -LPAI Prov. Sumatera Utara 2021 s/d sekarang
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <div
+        class="border-none flex flex-col bg-Consultation justify-between bg-cover"
+      >
+        <div
+          class="flex flex-col gap-8 py-12 px-mobile xl:flex-row xl:py-[200px] xl:px-[260px] justify-between items-center"
+        >
+          <div class="flex flex-col basis-5/12 items-center xl:items-start">
+            <h2
+              class="mb-6 text-[45px] font-bold leading-tight text-white font-Cormorant-Garamond text-center xl:text-start"
+            >
+              Tim ahli profesional hukum kami selalu siap melayani Anda dengan
+              solusi terbaik!
+            </h2>
+            <p
+              class="text-zinc-300 text-[20px] font-normal leading-snug font-Outfit text-center xl:text-start"
+            >
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected oir which don't look even
+              slightly believable.
+            </p>
+            <button
+              class="py-7 px-20 block w-fit mt-8 bg-yellow text-blue text-xl font-medium font-Outfit"
+            >
+              Kontak Kami
+            </button>
+          </div>
+          <div class="bg-white basis-6/12">
+            <div
+              class="border-[14px] border-neutral-200 m-10 py-10 xl:py-[68px] px-6 xl:px-12"
+            >
+              <h2
+                class="text-gray-900 text-3xl xl:text-title font-bold leading-10 font-Cormorant-Garamond mb-4"
+              >
+                Dapatkan Konsultasi
+              </h2>
+              <p
+                class="text-neutral-400 text-base xl:text-[20px] font-normal leading-7 font-Outfit"
+              >
+                There are of Lorem Ipsum available, but the majority by injected
+                humour which don't look even.
+              </p>
+              <div class="gap-3 items-center flex mt-9 flex-col md:flex-row">
+                <img src="./assets/call_card_consultation.svg" />
+                <div class="flex flex-col">
+                  <span
+                    class="text-gray-800 text-base md:text-[18px] font-medium capitalize font-Outfit text-center md:text-start"
+                  >
+                    Call Us On:
+                  </span>
+                  <span
+                    class="text-sky-950 text-base md:text-[24px] font-semibold leading-9 font-Inter"
+                  >
+                    0811-633-355
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[120px] flex justify-center items-center bg-blue z-30">
+          <img src="./assets/profilebar_image.png" class="w-[77px] h-[90px]" />
+        </div>
+      </div>
+    </body>
+  </html>
+</html>

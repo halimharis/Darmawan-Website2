@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ Scratch Project ✨</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 👇 css code file 👇 -->
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="relative">
+    <!-- NAVBAR -->
+
+    <div
+      class="absolute xl:flex-col px-mobile xl:px-desktop w-full py-2 flex justify-between xl:justify-center items-center gap-5 z-40 font-Inter"
+    >
+      <img src="./assets/profilebar_image.png" class="w-9 xl:w-[77px] h-auto" />
+
+      <label
+        for="navbar-toggler"
+        class="cursor-pointer flex flex-col gap-1 z-50 xl:hidden"
+      >
+        <input
+          id="navbar-toggler"
+          onchange="toggleNavbar()"
+          type="checkbox"
+          class="checked:bg-black z-50 origin-hamburger rounded-full checked:rotate-45 checked:translate-x-0 checked:-translate-y-[2px] transition-all navbar-toggler peer outline-none pointer-events-none peer checked:w-[calc(1.25*1.41421356237)] w-7 h-1 bg-white appearance-none"
+        />
+        <span
+          class="w-7 h-1 bg-white peer-checked:w-0 transition-all rounded-full"
+        ></span>
+        <span
+          class="peer-checked:bg-black z-50 origin-hamburger rounded-full w-7 h-1 bg-white transition-all peer-checked:-rotate-45 peer-checked:translate-x-0 peer-checked:translate-y-[2px] peer-checked:w-[calc(1.25*1.41421356237)]"
+        ></span>
+      </label>
+      <nav
+        class="absolute justify-center items-center gap-4 xl:bg-transparent -translate-y-full xl:translate-y-0 xl:relative xl:h-full xl:w-full w-screen h-screen bg-darkGray top-0 left-0 transition-all duration-500 xl:border-t-2 xl:border-b-2 xl:border-darkGray flex xl:justify-between xl:py-5"
+      >
+        <div class="flex flex-col xl:flex-row gap-6">
+          <a
+            class="navlink active text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+            >Halaman Utama</a
+          >
+          <a
+            href="profil.html"
+            class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+            >Profil</a
+          >
+          <a
+            href="tentang-kami.html"
+            class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+            >Tentang Kami</a
+          >
+          <a
+            href="kontak.html"
+            class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+            >Kontak</a
+          >
+        </div>
+        <div class="xl:flex gap-8 hidden">
+          <div class="flex justify-center items-center gap-3 font-Inter">
+            <img src="./assets/callwithborder2.png" class="w-16 h-16" />
+            <div class="flex flex-col">
+              <span class="text-yellow text-lg">Call us on:</span>
+              <span class="font-semibold text-2xl text-white"
+                >0811-633-355</span
+              >
+            </div>
+          </div>
+          <div class="flex justify-center items-center gap-3 font-Inter">
+            <img src="./assets/mailwithborder2.png" class="w-16 h-16" />
+            <div class="flex flex-col">
+              <span class="text-yellow text-lg">Email us:</span>
+              <span class="font-semibold text-2xl text-white"
+                >dyp.lawoffice@gmail.com</span
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+
+    <div
+      class="flex text-bg-white bg-Home_Hero min-h-screen bg-cover bg-center bg-black pb-12 xl:pb-0"
+    >
+      <div
+        class="z-20 w-full gap-8 xl:px-desktop flex flex-col-reverse xl:flex-row pt-32 xl:pt-72 xl:justify-between items-center"
+      >
+        <div class="basis-6/12 flex flex-col text-white px-mobile xl:px-0">
+          <img
+            src="./assets/smalldetail.svg"
+            class="h-[44px] w-[95px] mb-6 xl:mb-12"
+          />
+          <h1 class="text-4xl font-Cormorant-Garamond mb-1 xl:mb-3 xl:text-h1">
+            Darmawan Yusuf, S.H., S.E., M.Pd., M.H., CTLA., Mediator &
+            Associates
+          </h1>
+          <h3 class="text-base font-poppins leading-normal xl:text-2xl">
+            Pengacara, Konsultan Hukum, Penasehat Hukum, Penasihat Pajak, dan
+            Mediator.
+          </h3>
+          <button
+            class="py-4 px-10 xl:py-7 xl:px-20 text-base block w-fit mt-6 xl:mt-12 bg-yellow text-blue xl:text-xl font-medium"
+          >
+            Kontak Kami
+          </button>
+        </div>
+        <img
+          src="./assets/Darmawan-Yusuf_heroImage.png"
+          class="px-mobile xl:px-0"
+        />
+      </div>
+    </div>
+
+    <!-- KLIEN SECTION -->
+
+    <div
+      class="py-12 xl:py-28 px-mobile xl:px-desktop font-Cormorant-Garamond flex flex-col gap-16"
+    >
+      <h2 class="text-5xl xl:text-h2 text-blue text-center font-bold">
+        Klien Prioritas Utama Kami
+      </h2>
+      <div
+        class="flex flex-col lg:flex-row items-center xl:items-start gap-4 justify-between text-white"
+      >
+        <div
+          class="bg-blue flex flex-col py-8 px-10 gap-3 text-bg-white items-center w-[230px]"
+        >
+          <img src="./assets/card_total_client.svg" class="w-[41px] h-[38px]" />
+          <span class="text-[2.5rem] font-bold leading-[3.125rem] font-Martel">
+            1700+
+          </span>
+          <span class="text-[1rem] font-bold leading-[1.5rem] font-Martel">
+            KLIEN
+          </span>
+        </div>
+        <div
+          class="bg-blue flex flex-col py-8 px-10 gap-3 text-bg-white items-center w-[230px]"
+        >
+          <img src="./assets/card_total_client.svg" class="w-[41px] h-[38px]" />
+          <span class="text-[2.5rem] font-bold leading-[3.125rem] font-Martel">
+            $180 M
+          </span>
+          <span class="text-[1rem] font-bold leading-[1.5rem] font-Martel">
+            RECOVERED
+          </span>
+        </div>
+        <div
+          class="bg-blue flex flex-col py-8 px-10 gap-3 text-bg-white items-center w-[230px]"
+        >
+          <img src="./assets/card_total_client.svg" class="w-[41px] h-[38px]" />
+          <span class="text-[2.5rem] font-bold leading-[3.125rem] font-Martel">
+            98%
+          </span>
+          <span class="text-[1rem] font-bold leading-[1.5rem] font-Martel">
+            KASUS SUKSES
+          </span>
+        </div>
+        <div
+          class="bg-blue flex flex-col py-8 px-10 gap-3 text-bg-white items-center w-[230px]"
+        >
+          <img src="./assets/card_total_client.svg" class="w-[41px] h-[38px]" />
+          <span class="text-[2.5rem] font-bold leading-[3.125rem] font-Martel">
+            100
+          </span>
+          <span class="text-[1rem] font-bold leading-[1.5rem] font-Martel">
+            KASUS SELESAI
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE SECTION -->
+
+    <div
+      class="w-full px-mobile xl:flex-row py-12 xl:py-sectionSpace xl:px-desktop bg-blue text-white flex flex-col justify-between items-center"
+    >
+      <div class="basis-4/12 flex flex-col justify-between gap-8">
+        <img src="./assets/profile_image1.png" class="hidden xl:block" />
+        <img src="./assets/profile_image2.png" class="hidden xl:block" />
+      </div>
+      <div class="basis-7/12 gap-11 flex flex-col items-center xl:items-start">
+        <div class="flex flex-col gap-8 items-center xl:items-start">
+          <h2
+            class="text-3xl text-center xl:text-start xl:text-title font-bold font-Cormorant-Garamond xl:w-4/5 leading-tight"
+          >
+            DARMAWAN YUSUF, S.H., S.E., M.Pd., M.H., CTLA., Mediator
+          </h2>
+          <img
+            src="./assets/smalldetail.svg"
+            class="h-[44px] w-[95px] hidden xl:block"
+          />
+          <img
+            src="./assets/smalldetail2.svg"
+            class="h-[44px] w-[95px] xl:hidden"
+          />
+        </div>
+        <p
+          class="text-xl xl:text-description text-center xl:text-justify font-Open-Sans font-light leading-snug"
+        >
+          Pimpinan utama kantor pengacara DARMAWAN YUSUF. SH., SE., M.Pd., M.H.,
+          CTLA., Mediator & ASSOCIATES lahir di Kota Medan, Provinsi Sumatera
+          Utara. Dia adalah anak ketiga dari empat bersaudara dan saat ini aktif
+          sebagai Penasehat Hukum Tetap (Legal Consultant) Tenaga Ahli
+          Kepresidenan Bidang Politik, Hukum, dan Keamanan RI Dr. Lenis Kogoya,
+          M.Hum.
+        </p>
+        <button
+          class="py-4 px-10 xl:py-7 xl:px-20 block w-fit bg-yellow text-blue xl:text-xl font-medium"
+        >
+          Selengkapnya
+        </button>
+      </div>
+    </div>
+
+    <!-- AREA SECTION -->
+
+    <div
+      class="w-full py-12 xl:py-sectionSpace xl:px-desktop text-blue flex justify-between flex-col gap-8 px-mobile"
+    >
+      <div
+        class="flex flex-col xl:flex-row h-full justify-between gap-4 xl:gap-0"
+      >
+        <h2
+          class="text-3xl xl:text-title font-bold leading-tight font-Cormorant-Garamond basis-3/12 text-center xl:text-start"
+        >
+          Jelajahi Area Praktik Kami
+        </h2>
+        <div class="xl:w-[1px] w-full h-[1px] xl:h-auto bg-[#3A4553]"></div>
+        <span
+          class="text-lg text-center xl:text-2xl font-light leading-snug font-Open-Sans basis-7/12 xl:text-justify"
+        >
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have su alteration in some form, by injected humour, oir
+          randomised workds which don't look even slightly believable.
+        </span>
+      </div>
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-7 md:grid-cols-2">
+        <div
+          class="flex flex-col bg-blue text-white py-10 px-8 xl:py-14 xl:px-12"
+        >
+          <h4
+            class="text-2xl xl:text-4xl font-Cormorant-Garamond mb-2 font-bold"
+          >
+            Hukum Bisnis
+          </h4>
+          <p
+            class="grow font-Outfit text-base xl:text-xl font-normal leading-snug text-white"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            majority going to use a passage.
+          </p>
+          <div class="my-8 w-full h-[1px] bg-white"></div>
+          <div class="flex justify-between items-end">
+            <img src="./assets/card_hukum_bisnis.svg" class="w-12" />
+            <button
+              class="py-3 px-5 xl:py-4 xl:px-9 block w-fit bg-yellow text-blue text-base xl:text-xl font-medium"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-blue text-white py-10 px-8 xl:py-14 xl:px-12"
+        >
+          <h4
+            class="text-2xl xl:text-4xl font-Cormorant-Garamond mb-2 font-bold"
+          >
+            Pajak
+          </h4>
+          <p
+            class="grow font-Outfit text-base xl:text-xl font-normal leading-snug text-white"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            majority going to use a passage.
+          </p>
+          <div class="my-8 w-full h-[1px] bg-white"></div>
+          <div class="flex justify-between items-end">
+            <img src="./assets/card_pajak.svg" class="w-12" />
+            <button
+              class="py-3 px-5 xl:py-4 xl:px-9 block w-fit bg-yellow text-blue text-base xl:text-xl font-medium"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-blue text-white py-10 px-8 xl:py-14 xl:px-12"
+        >
+          <h4
+            class="text-2xl xl:text-4xl font-Cormorant-Garamond mb-2 font-bold"
+          >
+            Penasehat Hukum
+          </h4>
+          <p
+            class="grow font-Outfit text-base xl:text-xl font-normal leading-snug text-white"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            majority going to use a passage.
+          </p>
+          <div class="my-8 w-full h-[1px] bg-white"></div>
+          <div class="flex justify-between items-end">
+            <img src="./assets/card_penasehat_hukum.svg" class="w-12" />
+            <button
+              class="py-3 px-5 xl:py-4 xl:px-9 block w-fit bg-yellow text-blue text-base xl:text-xl font-medium"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-blue text-white py-10 px-8 xl:py-14 xl:px-12"
+        >
+          <h4
+            class="text-2xl xl:text-4xl font-Cormorant-Garamond mb-2 font-bold"
+          >
+            Kematian
+          </h4>
+          <p
+            class="grow font-Outfit text-base xl:text-xl font-normal leading-snug text-white"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            majority going to use a passage.
+          </p>
+          <div class="my-8 w-full h-[1px] bg-white"></div>
+          <div class="flex justify-between items-end">
+            <img src="./assets/card_kematian.png" class="w-12" />
+            <button
+              class="py-3 px-5 xl:py-4 xl:px-9 block w-fit bg-yellow text-blue text-base xl:text-xl font-medium"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-blue text-white py-10 px-8 xl:py-14 xl:px-12"
+        >
+          <h4
+            class="text-2xl xl:text-4xl font-Cormorant-Garamond mb-2 font-bold"
+          >
+            Kriminal
+          </h4>
+          <p
+            class="grow font-Outfit text-base xl:text-xl font-normal leading-snug text-white"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            majority going to use a passage.
+          </p>
+          <div class="my-8 w-full h-[1px] bg-white"></div>
+          <div class="flex justify-between items-end">
+            <img src="./assets/card_kriminal.svg" class="w-12" />
+            <button
+              class="py-3 px-5 xl:py-4 xl:px-9 block w-fit bg-yellow text-blue text-base xl:text-xl font-medium"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-blue text-white py-10 px-8 xl:py-14 xl:px-12"
+        >
+          <h4
+            class="text-2xl xl:text-4xl font-Cormorant-Garamond mb-2 font-bold"
+          >
+            Family Law
+          </h4>
+          <p
+            class="grow font-Outfit text-base xl:text-xl font-normal leading-snug text-white"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            majority going to use a passage.
+          </p>
+          <div class="my-8 w-full h-[1px] bg-white"></div>
+          <div class="flex justify-between items-end">
+            <img src="./assets/card_family_law.svg" class="w-12" />
+            <button
+              class="py-3 px-5 xl:py-4 xl:px-9 block w-fit bg-yellow text-blue text-base xl:text-xl font-medium"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AWARDS SECTION -->
+
+    <div class="relative bg-Penghargaan bg-cover bg-center text-white">
+      <div
+        class="px-mobile xl:px-desktop py-12 xl:py-24 flex flex-col items-center"
+      >
+        <div class="flex flex-col items-center w-2/3">
+          <h2
+            class="text-3xl xl:text-h2 font-Cormorant-Garamond mb-6 text-center"
+          >
+            Penghargaan Anugerah IAC
+          </h2>
+          <img src="./assets/smalldetail2.svg" class="w-[95px] h-[44px]" />
+          <h5
+            class="text-base xl:text-xl leading-snug font-Outfit text-center mt-12"
+          >
+            There are of Lorem Ipsum available, but the majority have su
+            alteration in some form, by injected humour, oir which don't look
+            even slightly believable.
+          </h5>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 mt-14 pb-14 border-b px-4 justify-center"
+        >
+          <div
+            class="flex py-8 px-10 pr-4 xl:pr-10 items-center bg-white gap-6"
+          >
+            <img src="./assets/card_award_icon.svg" class="w-12 xl:w-auto" />
+            <div class="flex flex-col gap-2">
+              <span
+                class="text-2xl font-bold font-Cormorant-Garamond text-blue"
+              >
+                The Best TOP 50 Lawyer (Pengacara Terbaik)
+              </span>
+              <span class="font-Outfit text-xl leading-snug text-[#909090]">
+                2019
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex py-8 px-10 pr-4 xl:pr-10 items-center bg-white gap-6"
+          >
+            <img src="./assets/card_award_icon.svg" class="w-12 xl:w-auto" />
+            <div class="flex flex-col gap-2">
+              <span
+                class="text-2xl font-bold font-Cormorant-Garamond text-blue"
+              >
+                The Best Law Office (Kantor Pengacara Terbaik)
+              </span>
+              <span class="font-Outfit text-xl leading-snug text-[#909090]">
+                2019
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex py-8 px-10 pr-4 xl:pr-10 items-center bg-white gap-6"
+          >
+            <img src="./assets/card_award_icon.svg" class="w-12 xl:w-auto" />
+            <div class="flex flex-col gap-2">
+              <span
+                class="text-2xl font-bold font-Cormorant-Garamond text-blue"
+              >
+                Penghargaan Anugerah dari IDAF sebagai Kantor Hukum Unggulan
+              </span>
+              <span class="font-Outfit text-xl leading-snug text-[#909090]">
+                2020
+              </span>
+            </div>
+          </div>
+          <!-- <CardAward
+            title="The Best TOP 50 Lawyer (Pengacara Terbaik)"
+            year="2019"
+          />
+          <CardAward
+            title="The Best Law Office (Kantor Pengacara Terbaik)"
+            year="2019"
+          />
+          <CardAward
+            title="Penghargaan Anugerah dari IDAF sebagai Kantor Hukum Unggulan"
+            year="2020"
+          /> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- CAROUSEL SECTION -->
+
+    <div
+      class="py-12 pb-24 px-mobile xl:py-32 xl:px-desktop flex flex-col items-center"
+    >
+      <h2
+        class="text-3xl font-bold text-blue xl:text-h2 font-Cormorant-Garamond mb-6"
+      >
+        Kantor Kami
+      </h2>
+      <img
+        src="./assets/smalldetail2-black.svg"
+        class="w-[95px] h-[44px] mb-12"
+      />
+      <div class="flex xl:w-8/12 relative h-auto min-h-[50vh]">
+        <div
+          id="carousel-wrapper"
+          class="flex z-10 border scrollbar-hide flex-nowrap overflow-x-scroll h-auto w-full border-white"
+        >
+          <img
+            src="https://picsum.photos/200/120"
+            class="w-full h-full grow-0 shrink-0"
+          />
+          <img
+            src="https://picsum.photos/200/121"
+            class="w-full h-full grow-0 shrink-0"
+          />
+          <img
+            src="https://picsum.photos/200/122"
+            class="w-full h-full grow-0 shrink-0"
+          />
+        </div>
+        <div
+          class="absolute w-full h-full top-0 flex items-center justify-center"
+        >
+          <button
+            onclick="prev()"
+            class="absolute -left-16 hover:scale-110 transition-all hidden lg:block"
+          >
+            <div
+              class="w-0 h-0 border-t-[25px] border-t-transparent border-r-[30px] border-r-blue border-b-[25px] border-b-transparent hover:scale-105"
+            ></div>
+          </button>
+          <button
+            onclick="next()"
+            class="absolute -right-16 hover:scale-110 transition-all hidden lg:block"
+          >
+            <div
+              class="w-0 h-0 border-t-[25px] border-t-transparent border-l-[30px] border-l-blue border-b-[25px] border-b-transparent"
+            ></div>
+          </button>
+          <div class="absolute -bottom-8 flex gap-4">
+            <input
+              checked="checked"
+              onchange="goToPagination(0)"
+              name="carousel-page"
+              type="radio"
+              class="w-12 h-3 cursor-pointer bg-blue appearance-none checked:opacity-100 opacity-20"
+            />
+            <input
+              onchange="goToPagination(1)"
+              name="carousel-page"
+              type="radio"
+              class="w-12 h-3 cursor-pointer bg-blue appearance-none checked:opacity-100 opacity-20"
+            />
+            <input
+              onchange="goToPagination(2)"
+              name="carousel-page"
+              type="radio"
+              class="w-12 h-3 cursor-pointer bg-blue appearance-none checked:opacity-100 opacity-20"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUOTES SECTION -->
+
+    <div
+      class="bg-Quote px-mobile xl:px-72 py-12 xl:py-44 flex flex-col gap-6 bg-cover bg-center items-center text-white"
+    >
+      <h2 class="text-3xl xl:text-h1 font-Cormorant-Garamond text-center">
+        "Hukum harus bersifat netral dan adil, tanpa memandang status sosial
+        atau kekayaan seseorang."
+      </h2>
+      <img src="./assets/smalldetail2.svg" class="w-[95px] h-[44px]" />
+      <h2 class="text-3xl xl:text-h1 font-Cormorant-Garamond text-center">
+        - Mahatma Gandhi
+      </h2>
+    </div>
+
+    <!-- WHAT THEY SAY -->
+
+    <div
+      class="py-12 xl:py-28 px-mobile xl:px-[260px] flex flex-col items-center"
+    >
+      <h2
+        class="font-Cormorant-Garamond text-4xl font-bold xl:text-h2 text-center text-blue mb-6"
+      >
+        Kata Klien Kami
+      </h2>
+      <img src="./assets/smalldetail2-black.svg" class="w-[95px] h-[44px]" />
+      <div class="flex mt-16 gap-5 flex-col lg:flex-row">
+        <div
+          class="flex gap-5 flex-col-reverse lg:odd:flex-col lg:even:flex-col-reverse group"
+        >
+          <div
+            class="rounded-tl-[40px] lg:group-odd:rounded-bl-[40px] lg:group-even:rounded-bl-[40px] py-[70px] px-12 bg-blue flex flex-col gap-7"
+          >
+            <img src="./assets/quote_icon_card.svg" class="w-[30px] h-[25px]" />
+            <span class="text-[#F6FAFF] text-xl font-Outfit leading-snug">
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected oir which don't look even
+              slightly believable.
+            </span>
+          </div>
+          <div class="flex text-blue gap-5">
+            <img src="./assets/card_whatTheySaid1.png" class="rounded-full" />
+            <div class="flex flex-col justify-center">
+              <span
+                class="text-3xl font-Cormorant-Garamond font-bold leading-tight"
+              >
+                Natasha
+              </span>
+              <span class="text-xl font-Outfit leading-snug"
+                >Junior Lawyer</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 flex-col-reverse lg:odd:flex-col lg:even:flex-col-reverse group"
+        >
+          <div
+            class="rounded-tl-[40px] lg:group-odd:rounded-bl-[40px] lg:group-even:rounded-tl-[40px] py-[70px] px-12 bg-blue flex flex-col gap-7"
+          >
+            <img src="./assets/quote_icon_card.svg" class="w-[30px] h-[25px]" />
+            <span class="text-[#F6FAFF] text-xl font-Outfit leading-snug">
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected oir which don't look even
+              slightly believable.
+            </span>
+          </div>
+          <div class="flex text-blue gap-5">
+            <img src="./assets/card_whatTheySaid1.png" class="rounded-full" />
+            <div class="flex flex-col justify-center">
+              <span
+                class="text-3xl font-Cormorant-Garamond font-bold leading-tight"
+              >
+                Minci pall
+              </span>
+              <span class="text-xl font-Outfit leading-snug">Consultant</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 flex-col-reverse lg:odd:flex-col lg:even:flex-col-reverse group"
+        >
+          <div
+            class="rounded-tl-[40px] lg:group-odd:rounded-bl-[40px] lg:group-even:rounded-tl-[40px] py-[70px] px-12 bg-blue flex flex-col gap-7"
+          >
+            <img src="./assets/quote_icon_card.svg" class="w-[30px] h-[25px]" />
+            <span class="text-[#F6FAFF] text-xl font-Outfit leading-snug">
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected oir which don't look even
+              slightly believable.
+            </span>
+          </div>
+          <div class="flex text-blue gap-5">
+            <img src="./assets/card_whatTheySaid1.png" class="rounded-full" />
+            <div class="flex flex-col justify-center">
+              <span
+                class="text-3xl font-Cormorant-Garamond font-bold leading-tight"
+              >
+                Julia Rose
+              </span>
+              <span class="text-xl font-Outfit leading-snug">Consultant</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex gap-5 flex-col-reverse lg:odd:flex-col lg:even:flex-col-reverse group"
+        >
+          <div
+            class="rounded-tl-[40px] lg:group-odd:rounded-bl-[40px] lg:group-even:rounded-tl-[40px] py-[70px] px-12 bg-blue flex flex-col gap-7"
+          >
+            <img src="./assets/quote_icon_card.svg" class="w-[30px] h-[25px]" />
+            <span class="text-[#F6FAFF] text-xl font-Outfit leading-snug">
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected oir which don't look even
+              slightly believable.
+            </span>
+          </div>
+          <div class="flex text-blue gap-5">
+            <img src="./assets/card_whatTheySaid1.png" class="rounded-full" />
+            <div class="flex flex-col justify-center">
+              <span
+                class="text-3xl font-Cormorant-Garamond font-bold leading-tight"
+              >
+                John David
+              </span>
+              <span class="text-xl font-Outfit leading-snug">Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div
+      class="border-none flex flex-col bg-Consultation justify-between bg-cover"
+    >
+      <div
+        class="flex flex-col gap-8 py-12 px-mobile xl:flex-row xl:py-[200px] xl:px-[260px] justify-between items-center"
+      >
+        <div class="flex flex-col basis-5/12 items-center xl:items-start">
+          <h2
+            class="mb-6 text-[45px] font-bold leading-tight text-white font-Cormorant-Garamond text-center xl:text-start"
+          >
+            Tim ahli profesional hukum kami selalu siap melayani Anda dengan
+            solusi terbaik!
+          </h2>
+          <p
+            class="text-zinc-300 text-[20px] font-normal leading-snug font-Outfit text-center xl:text-start"
+          >
+            There are of Lorem Ipsum available, but the majority have su
+            alteration in some form, by injected oir which don't look even
+            slightly believable.
+          </p>
+          <button
+            class="py-7 px-20 block w-fit mt-8 bg-yellow text-blue text-xl font-medium font-Outfit"
+          >
+            Kontak Kami
+          </button>
+        </div>
+        <div class="bg-white basis-6/12">
+          <div
+            class="border-[14px] border-neutral-200 m-10 py-10 xl:py-[68px] px-6 xl:px-12"
+          >
+            <h2
+              class="text-gray-900 text-3xl xl:text-title font-bold leading-10 font-Cormorant-Garamond mb-4"
+            >
+              Dapatkan Konsultasi
+            </h2>
+            <p
+              class="text-neutral-400 text-base xl:text-[20px] font-normal leading-7 font-Outfit"
+            >
+              There are of Lorem Ipsum available, but the majority by injected
+              humour which don't look even.
+            </p>
+            <div class="gap-3 items-center flex mt-9 flex-col md:flex-row">
+              <img src="./assets/call_card_consultation.svg" />
+              <div class="flex flex-col">
+                <span
+                  class="text-gray-800 text-base md:text-[18px] font-medium capitalize font-Outfit text-center md:text-start"
+                >
+                  Call Us On:
+                </span>
+                <span
+                  class="text-sky-950 text-base md:text-[24px] font-semibold leading-9 font-Inter"
+                >
+                  0811-633-355
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-[120px] flex justify-center items-center bg-blue z-30">
+        <img src="./assets/profilebar_image.png" class="w-[77px] h-[90px]" />
+      </div>
+    </div>
+
+    <!-- 👇 javascript code file 👇 -->
+    <script src="../src/js/index.js"></script>
+  </body>
+</html>

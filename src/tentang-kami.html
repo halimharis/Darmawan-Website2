@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>✨ Scratch Project ✨</title>
+      <!-- Font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <!-- 👇 css code file 👇 -->
+      <link href="../dist/output.css" rel="stylesheet" />
+    </head>
+    <body>
+      <!-- NAVBAR -->
+
+      <div
+        class="absolute xl:flex-col px-mobile xl:px-desktop w-full py-2 flex justify-between xl:justify-center items-center gap-5 z-40 font-Inter"
+      >
+        <img
+          src="./assets/profilebar_image.png"
+          class="w-9 xl:w-[77px] h-auto"
+        />
+
+        <label
+          for="navbar-toggler"
+          class="cursor-pointer flex flex-col gap-1 z-50 xl:hidden"
+        >
+          <input
+            id="navbar-toggler"
+            onchange="toggleNavbar()"
+            type="checkbox"
+            class="checked:bg-black z-50 origin-hamburger rounded-full checked:rotate-45 checked:translate-x-0 checked:-translate-y-[2px] transition-all navbar-toggler peer outline-none pointer-events-none peer checked:w-[calc(1.25*1.41421356237)] w-7 h-1 bg-white appearance-none"
+          />
+          <span
+            class="w-7 h-1 bg-white peer-checked:w-0 transition-all rounded-full"
+          ></span>
+          <span
+            class="peer-checked:bg-black z-50 origin-hamburger rounded-full w-7 h-1 bg-white transition-all peer-checked:-rotate-45 peer-checked:translate-x-0 peer-checked:translate-y-[2px] peer-checked:w-[calc(1.25*1.41421356237)]"
+          ></span>
+        </label>
+        <nav
+          class="absolute justify-center items-center gap-4 xl:bg-transparent -translate-y-full xl:translate-y-0 xl:relative xl:h-full xl:w-full w-screen h-screen bg-darkGray top-0 left-0 transition-all duration-500 xl:border-t-2 xl:border-b-2 xl:border-darkGray flex xl:justify-between xl:py-5"
+        >
+          <div class="flex flex-col xl:flex-row gap-6">
+            <a
+              href="index.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Halaman Utama</a
+            >
+            <a
+              href="profil.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Profil</a
+            >
+            <a
+              href="tentang-kami.html"
+              class="navlink active text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Tentang Kami</a
+            >
+            <a
+              href="kontak.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Kontak</a
+            >
+          </div>
+          <div class="xl:flex gap-8 hidden">
+            <div class="flex justify-center items-center gap-3 font-Inter">
+              <img src="./assets/callwithborder2.png" class="w-16 h-16" />
+              <div class="flex flex-col">
+                <span class="text-yellow text-lg">Call us on:</span>
+                <span class="font-semibold text-2xl text-white"
+                  >0811-633-355</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-3 font-Inter">
+              <img src="./assets/mailwithborder2.png" class="w-16 h-16" />
+              <div class="flex flex-col">
+                <span class="text-yellow text-lg">Email us:</span>
+                <span class="font-semibold text-2xl text-white"
+                  >dyp.lawoffice@gmail.com</span
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- HERO -->
+
+      <div
+        class="h-[calc(0.39_*_100vw)] bg-cover flex flex-col text-h1 justify-center min-h-screen xl:min-h-fit xl:justify-end items-center font-Cormorant-Garamond text-white bg-Aboutus_Hero"
+      >
+        <div class="flex flex-col items-center xl:mb-52">
+          <h1 class="mb-8">Tentang Kami</h1>
+          <img src="./assets/smalldetail2.svg" class="w-[95px] h-[44px]" />
+        </div>
+      </div>
+
+      <!-- AWARDS -->
+
+      <div class="relative bg-Penghargaan bg-cover bg-center text-white">
+        <div
+          class="px-mobile xl:px-desktop py-12 xl:py-24 flex flex-col items-center"
+        >
+          <div class="flex flex-col items-center w-2/3">
+            <h2
+              class="text-3xl xl:text-h2 font-Cormorant-Garamond mb-6 text-center"
+            >
+              Penghargaan Anugerah IAC
+            </h2>
+            <img src="./assets/smalldetail2.svg" class="w-[95px] h-[44px]" />
+            <h5
+              class="text-base xl:text-xl leading-snug font-Outfit text-center mt-12"
+            >
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected humour, oir which don't look
+              even slightly believable.
+            </h5>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 mt-14 pb-14 border-b px-4 justify-center"
+          >
+            <div
+              class="flex py-8 px-10 pr-4 xl:pr-10 items-center bg-white gap-6"
+            >
+              <img src="./assets/card_award_icon.svg" class="w-12 xl:w-auto" />
+              <div class="flex flex-col gap-2">
+                <span
+                  class="text-2xl font-bold font-Cormorant-Garamond text-blue"
+                >
+                  The Best TOP 50 Lawyer (Pengacara Terbaik)
+                </span>
+                <span class="font-Outfit text-xl leading-snug text-[#909090]">
+                  2019
+                </span>
+              </div>
+            </div>
+            <div
+              class="flex py-8 px-10 pr-4 xl:pr-10 items-center bg-white gap-6"
+            >
+              <img src="./assets/card_award_icon.svg" class="w-12 xl:w-auto" />
+              <div class="flex flex-col gap-2">
+                <span
+                  class="text-2xl font-bold font-Cormorant-Garamond text-blue"
+                >
+                  The Best Law Office (Kantor Pengacara Terbaik)
+                </span>
+                <span class="font-Outfit text-xl leading-snug text-[#909090]">
+                  2019
+                </span>
+              </div>
+            </div>
+            <div
+              class="flex py-8 px-10 pr-4 xl:pr-10 items-center bg-white gap-6"
+            >
+              <img src="./assets/card_award_icon.svg" class="w-12 xl:w-auto" />
+              <div class="flex flex-col gap-2">
+                <span
+                  class="text-2xl font-bold font-Cormorant-Garamond text-blue"
+                >
+                  Penghargaan Anugerah dari IDAF sebagai Kantor Hukum Unggulan
+                </span>
+                <span class="font-Outfit text-xl leading-snug text-[#909090]">
+                  2020
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR TEAM -->
+
+      <div
+        class="xl:px-desktop xl:py-sectionSpace flex flex-col text-blue py-12 px-mobile"
+      >
+        <div
+          class="flex justify-between mb-16 flex-col xl:flex-row items-center xl:items-start gap-4"
+        >
+          <div class="flex flex-col gap-2 items-center">
+            <h2
+              class="text-3xl xl:text-title font-Cormorant-Garamond font-bold leading-tight"
+            >
+              Tim Kami
+            </h2>
+            <img
+              src="./assets/smalldetail-blue.svg"
+              class="w-[95px] h-[44px] hidden xl:block"
+            />
+            <img
+              src="./assets/smalldetail2-black.svg"
+              class="w-[95px] h-[44px] block xl:hidden"
+            />
+          </div>
+          <div class="w-[1px] bg-blue"></div>
+          <p class="basis-7/12 text-lg xl:text-2xl text-center">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have su alteration in some form, by injected humour,
+            oir randomised workds which don't look even slightly believable.
+          </p>
+        </div>
+        <div
+          class="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3 gap-12 xl:gap-[126px]"
+        >
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card1.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Prof. Dr. H. Triono Eddy, S.H., M.Hum
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card2.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Yuli Arliyanti, S.H., M.H
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card3.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Kosidin, S.H.,B.BA
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card4.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Agustina,S.E.,S.H.,M.H
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card5.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Kolonel TNI (purn) Jameslan Siregar, S.H
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card6.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Pontas Silalahi,S.E.,S.H.,M.H., CCD.,CMLC.,MED
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card7.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Dody Herdiansyah, S.H.,M.H
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card8.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Roni S Hutagaol, S.H.,M.H
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card9.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Ria Damayanti, S.H., M.H
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card10.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Mihon Manalu, S.H.,M.Pd
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card11.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Advokat Lin Faber, S.H
+            </h4>
+          </div>
+          <div class="flex flex-col gap-5 items-center">
+            <img src="./assets/ourteam_card12.png" />
+            <h4
+              class="text-xl xl:text-description font-Cormorant-Garamond font-bold text-blue text-center"
+            >
+              Hartono, SH., M.Sc., BKP
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- OFFER -->
+
+      <div
+        class="flex flex-col py-12 px-mobile xl:py-sectionSpace xl:px-[196px] items-center"
+      >
+        <h1
+          class="mb-8 text-3xl xl:text-title text-blue font-Cormorant-Garamond capitalize leading-tight font-bold text-center"
+        >
+          Apa yang kami tawarkan
+        </h1>
+        <img
+          src="./assets/smalldetail2-black.svg"
+          class="w-[95px] h-[44px] mb-14"
+        />
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+          <div class="bg-blue text-white px-14 py-16">
+            <img
+              src="./assets/whatWeOffer_card_icon1.svg"
+              class="w-16 xl:w-auto mb-6"
+            />
+            <h3
+              class="text-2xl xl:text-[35px] font-Cormorant-Garamond font-bold leading-tight mb-2"
+            >
+              Cara langsung dari keadilan.
+            </h3>
+            <p class="font-Outfit lg:text-[20px] leading-snug">
+              when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five
+              centuries, but also the leap into electronic typesetting,
+              remaining essentially.
+            </p>
+          </div>
+          <div class="bg-blue text-white px-14 py-16">
+            <img
+              src="./assets/whatWeOffer_card_icon2.svg"
+              class="w-16 xl:w-auto mb-6"
+            />
+            <h3
+              class="text-2xl xl:text-[35px] font-Cormorant-Garamond font-bold leading-tight mb-2"
+            >
+              Melindungi Bisnis Anda.
+            </h3>
+            <p class="font-Outfit lg:text-[20px] leading-snug">
+              when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five
+              centuries, but also the leap into electronic typesetting,
+              remaining essentially.
+            </p>
+          </div>
+          <div class="bg-blue text-white px-14 py-16">
+            <img
+              src="./assets/whatWeOffer_card_icon2.svg"
+              class="w-16 xl:w-auto mb-6"
+            />
+            <h3
+              class="text-2xl xl:text-[35px] font-Cormorant-Garamond font-bold leading-tight mb-2"
+            >
+              Hubungan yang didasarkan pada kepercayaan.
+            </h3>
+            <p class="font-Outfit lg:text-[20px] leading-snug">
+              when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five
+              centuries, but also the leap into electronic typesetting,
+              remaining essentially.
+            </p>
+          </div>
+          <div class="bg-blue text-white px-14 py-16">
+            <img
+              src="./assets/whatWeOffer_card_icon2.svg"
+              class="w-16 xl:w-auto mb-6"
+            />
+            <h3
+              class="text-2xl xl:text-[35px] font-Cormorant-Garamond font-bold leading-tight mb-2"
+            >
+              Berjuang untuk keadilan.
+            </h3>
+            <p class="font-Outfit lg:text-[20px] leading-snug">
+              when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five
+              centuries, but also the leap into electronic typesetting,
+              remaining essentially.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <div
+        class="border-none flex flex-col bg-Consultation justify-between bg-cover"
+      >
+        <div
+          class="flex flex-col gap-8 py-12 px-mobile xl:flex-row xl:py-[200px] xl:px-[260px] justify-between items-center"
+        >
+          <div class="flex flex-col basis-5/12 items-center xl:items-start">
+            <h2
+              class="mb-6 text-[45px] font-bold leading-tight text-white font-Cormorant-Garamond text-center xl:text-start"
+            >
+              Tim ahli profesional hukum kami selalu siap melayani Anda dengan
+              solusi terbaik!
+            </h2>
+            <p
+              class="text-zinc-300 text-[20px] font-normal leading-snug font-Outfit text-center xl:text-start"
+            >
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected oir which don't look even
+              slightly believable.
+            </p>
+            <button
+              class="py-7 px-20 block w-fit mt-8 bg-yellow text-blue text-xl font-medium font-Outfit"
+            >
+              Kontak Kami
+            </button>
+          </div>
+          <div class="bg-white basis-6/12">
+            <div
+              class="border-[14px] border-neutral-200 m-10 py-10 xl:py-[68px] px-6 xl:px-12"
+            >
+              <h2
+                class="text-gray-900 text-3xl xl:text-title font-bold leading-10 font-Cormorant-Garamond mb-4"
+              >
+                Dapatkan Konsultasi
+              </h2>
+              <p
+                class="text-neutral-400 text-base xl:text-[20px] font-normal leading-7 font-Outfit"
+              >
+                There are of Lorem Ipsum available, but the majority by injected
+                humour which don't look even.
+              </p>
+              <div class="gap-3 items-center flex mt-9 flex-col md:flex-row">
+                <img src="./assets/call_card_consultation.svg" />
+                <div class="flex flex-col">
+                  <span
+                    class="text-gray-800 text-base md:text-[18px] font-medium capitalize font-Outfit text-center md:text-start"
+                  >
+                    Call Us On:
+                  </span>
+                  <span
+                    class="text-sky-950 text-base md:text-[24px] font-semibold leading-9 font-Inter"
+                  >
+                    0811-633-355
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[120px] flex justify-center items-center bg-blue z-30">
+          <img src="./assets/profilebar_image.png" class="w-[77px] h-[90px]" />
+        </div>
+      </div>
+    </body>
+  </html>
+</html>

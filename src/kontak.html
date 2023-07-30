@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>✨ Scratch Project ✨</title>
+      <!-- Font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <!-- 👇 css code file 👇 -->
+      <link href="../dist/output.css" rel="stylesheet" />
+    </head>
+    <body>
+      <!-- NAVBAR -->
+
+      <div
+        class="absolute xl:flex-col px-mobile xl:px-desktop w-full py-2 flex justify-between xl:justify-center items-center gap-5 z-40 font-Inter"
+      >
+        <img
+          src="./assets/profilebar_image.png"
+          class="w-9 xl:w-[77px] h-auto"
+        />
+
+        <label
+          for="navbar-toggler"
+          class="cursor-pointer flex flex-col gap-1 z-50 xl:hidden"
+        >
+          <input
+            id="navbar-toggler"
+            onchange="toggleNavbar()"
+            type="checkbox"
+            class="checked:bg-black z-50 origin-hamburger rounded-full checked:rotate-45 checked:translate-x-0 checked:-translate-y-[2px] transition-all navbar-toggler peer outline-none pointer-events-none peer checked:w-[calc(1.25*1.41421356237)] w-7 h-1 bg-white appearance-none"
+          />
+          <span
+            class="w-7 h-1 bg-white peer-checked:w-0 transition-all rounded-full"
+          ></span>
+          <span
+            class="peer-checked:bg-black z-50 origin-hamburger rounded-full w-7 h-1 bg-white transition-all peer-checked:-rotate-45 peer-checked:translate-x-0 peer-checked:translate-y-[2px] peer-checked:w-[calc(1.25*1.41421356237)]"
+          ></span>
+        </label>
+        <nav
+          class="absolute justify-center items-center gap-4 xl:bg-transparent -translate-y-full xl:translate-y-0 xl:relative xl:h-full xl:w-full w-screen h-screen bg-darkGray top-0 left-0 transition-all duration-500 xl:border-t-2 xl:border-b-2 xl:border-darkGray flex xl:justify-between xl:py-5"
+        >
+          <div class="flex flex-col xl:flex-row gap-6">
+            <a
+              href="index.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Halaman Utama</a
+            >
+            <a
+              href="profil.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Profil</a
+            >
+            <a
+              href="tentang-kami.html"
+              class="navlink text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Tentang Kami</a
+            >
+            <a
+              href="kontak.html"
+              class="navlink active text-lg lg:text-2xl font-Inter flex justify-center items-center flex-col font-light gap-1 text-white"
+              >Kontak</a
+            >
+          </div>
+          <div class="xl:flex gap-8 hidden">
+            <div class="flex justify-center items-center gap-3 font-Inter">
+              <img src="./assets/callwithborder2.png" class="w-16 h-16" />
+              <div class="flex flex-col">
+                <span class="text-yellow text-lg">Call us on:</span>
+                <span class="font-semibold text-2xl text-white"
+                  >0811-633-355</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-center items-center gap-3 font-Inter">
+              <img src="./assets/mailwithborder2.png" class="w-16 h-16" />
+              <div class="flex flex-col">
+                <span class="text-yellow text-lg">Email us:</span>
+                <span class="font-semibold text-2xl text-white"
+                  >dyp.lawoffice@gmail.com</span
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- HERO -->
+
+      <div
+        class="h-[calc(0.39_*_100vw)] bg-center min-h-screen xl:min-h-fit bg-cover flex flex-col text-h1 justify-center xl:justify-end items-center font-Cormorant-Garamond text-white bg-Aboutus_Hero"
+      >
+        <div class="flex flex-col items-center xl:mb-52">
+          <h1 class="mb-8">Kontak Kami</h1>
+          <img src="./assets/smalldetail2.svg" class="w-[95px] h-[44px]" />
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+
+      <div class="py-12 px-mobile xl:py-sectionSpace xl:px-desktop">
+        <div class="flex flex-col xl:flex-row justify-between gap-14 mb-24">
+          <div class="flex flex-col text-blue">
+            <h2
+              class="text-[30px] font-bold leading-tight font-Cormorant-Garamond mb-4"
+            >
+              Sapa Darmawan Yusuf dan Tim
+            </h2>
+            <p class="font-Outfit leading-snug text-[20px]">
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected oir which don't look even
+              slightly believable.
+            </p>
+          </div>
+          <div class="w-full h-[1px] xl:h-auto xl:w-[1px] bg-blue"></div>
+          <div class="flex flex-col text-blue">
+            <h2
+              class="text-[30px] font-bold leading-tight font-Cormorant-Garamond mb-4"
+            >
+              Jakarta
+            </h2>
+            <p class="font-Outfit leading-snug text-[20px]">
+              Jl. Daan Mogot Km 1 Ruko Permata No. 9 B, Kel Jelambar, Kec Grogol
+              Pertamburan. kota Jakarta Barat 11460, Prov. DKI Jakarta
+            </p>
+          </div>
+          <div class="w-full h-[1px] xl:h-auto xl:w-[1px] bg-blue"></div>
+          <div class="flex flex-col text-blue">
+            <h2
+              class="text-[30px] font-bold leading-tight font-Cormorant-Garamond mb-4"
+            >
+              Medan
+            </h2>
+            <p class="font-Outfit leading-snug text-[20px]">
+              Jl. Tempuling No.70 A, Kel. Sidorejo, Kec. Medan Tembung, Kota
+              Medan 20222
+            </p>
+          </div>
+        </div>
+        <div class="px-6 xl:px-24 pt-12 xl:pt-[108px] bg-blue">
+          <form
+            onSubmit=""
+            class="flex flex-col xl:flex-row gap-24 items-end xl:mb-28"
+          >
+            <div class="flex flex-col gap-10 w-full">
+              <input
+                placeholder="Your Name Here"
+                class="bg-transparent text-zinc-300 border-b py-4 text-lg font-Outfit leading-relaxed outline-none"
+              />
+              <input
+                placeholder="Your Mail Here"
+                class="bg-transparent text-zinc-300 border-b py-4 text-lg font-Outfit leading-relaxed outline-none"
+              />
+              <input
+                placeholder="Your Phone Number"
+                class="bg-transparent text-zinc-300 border-b py-4 text-lg font-Outfit leading-relaxed outline-none"
+              />
+              <input
+                placeholder="What Service You Want"
+                class="bg-transparent text-zinc-300 border-b py-4 text-lg font-Outfit leading-relaxed outline-none"
+              />
+            </div>
+            <div class="flex flex-col w-full gap-7">
+              <textarea
+                class="bg-transparent border border-white h-48 p-6 text-lg font-Outfit leading-relaxed text-white"
+                placeholder="Your Message"
+              ></textarea>
+              <button
+                type="submit"
+                class="py-7 px-16 block w-fit bg-yellow text-blue text-xl font-medium self-end xl:self-auto"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+          <div
+            class="flex flex-col xl:flex-row gap-8 w-full justify-evenly py-11"
+          >
+            <div class="flex gap-3 items-center">
+              <img src="./assets/callwithborder2.png" class="w-16 h-16" />
+              <div class="flex flex-col">
+                <span
+                  class="text-yellow font-Outfit font-medium capitalize text-lg"
+                >
+                  Call Us On:
+                </span>
+                <span class="text-[22px] font-Outfit text-white">
+                  (021) 3950 2281
+                </span>
+                <span class="text-[22px] font-Outfit text-white">
+                  (061) 80034718
+                </span>
+              </div>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img src="./assets/mailwithborder2.png" class="w-16 h-16" />
+              <div class="flex flex-col">
+                <span
+                  class="text-yellow font-Outfit font-medium capitalize text-lg"
+                >
+                  Email Us:
+                </span>
+                <span class="text-[22px] font-Outfit text-white">
+                  dyp.lawoffice@gmail.com
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <div
+        class="border-none flex flex-col bg-Consultation justify-between bg-cover"
+      >
+        <div
+          class="flex flex-col gap-8 py-12 px-mobile xl:flex-row xl:py-[200px] xl:px-[260px] justify-between items-center"
+        >
+          <div class="flex flex-col basis-5/12 items-center xl:items-start">
+            <h2
+              class="mb-6 text-[45px] font-bold leading-tight text-white font-Cormorant-Garamond text-center xl:text-start"
+            >
+              Tim ahli profesional hukum kami selalu siap melayani Anda dengan
+              solusi terbaik!
+            </h2>
+            <p
+              class="text-zinc-300 text-[20px] font-normal leading-snug font-Outfit text-center xl:text-start"
+            >
+              There are of Lorem Ipsum available, but the majority have su
+              alteration in some form, by injected oir which don't look even
+              slightly believable.
+            </p>
+            <button
+              class="py-7 px-20 block w-fit mt-8 bg-yellow text-blue text-xl font-medium font-Outfit"
+            >
+              Kontak Kami
+            </button>
+          </div>
+          <div class="bg-white basis-6/12">
+            <div
+              class="border-[14px] border-neutral-200 m-10 py-10 xl:py-[68px] px-6 xl:px-12"
+            >
+              <h2
+                class="text-gray-900 text-3xl xl:text-title font-bold leading-10 font-Cormorant-Garamond mb-4"
+              >
+                Dapatkan Konsultasi
+              </h2>
+              <p
+                class="text-neutral-400 text-base xl:text-[20px] font-normal leading-7 font-Outfit"
+              >
+                There are of Lorem Ipsum available, but the majority by injected
+                humour which don't look even.
+              </p>
+              <div class="gap-3 items-center flex mt-9 flex-col md:flex-row">
+                <img src="./assets/call_card_consultation.svg" />
+                <div class="flex flex-col">
+                  <span
+                    class="text-gray-800 text-base md:text-[18px] font-medium capitalize font-Outfit text-center md:text-start"
+                  >
+                    Call Us On:
+                  </span>
+                  <span
+                    class="text-sky-950 text-base md:text-[24px] font-semibold leading-9 font-Inter"
+                  >
+                    0811-633-355
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[120px] flex justify-center items-center bg-blue z-30">
+          <img src="./assets/profilebar_image.png" class="w-[77px] h-[90px]" />
+        </div>
+      </div>
+    </body>
+  </html>
+</html>
