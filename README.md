@@ -3,7 +3,7 @@
 > This is a project that does not use any dependencies
 > everything can be accessed from the **src**
 
-├── src
+├── src  
     ├── assets (folder contain all of the images and icons)
     ├── dist
         ├── output.css (output style, tailwind)
