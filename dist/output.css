@@ -984,6 +984,10 @@ video {
   overflow-x: scroll;
 }
 
+.break-all {
+  word-break: break-all;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1499,13 +1503,10 @@ video {
   transition-duration: 500ms;
 }
 
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+@media screen and (max-width: 900) {
+  .navlink::after {
+    display: none;
+  }
 }
 
 .navlink::after {
@@ -1524,20 +1525,8 @@ video {
   background-color: rgb(246 250 255);
 }
 
-.after\:h-1::after {
-  content: var(--tw-content);
-  height: 0.25rem;
-}
-
-.after\:w-6::after {
-  content: var(--tw-content);
-  width: 1.5rem;
-}
-
-.after\:bg-white::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 250 255 / var(--tw-bg-opacity));
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 .checked\:w-\[calc\(1\.25\*1\.41421356237\)\]:checked {
@@ -1997,5 +1986,26 @@ video {
 
   .xl\:font-normal {
     font-weight: 400;
+  }
+
+  .xl\:after\:block::after {
+    content: var(--tw-content);
+    display: block;
+  }
+
+  .xl\:after\:h-1::after {
+    content: var(--tw-content);
+    height: 0.25rem;
+  }
+
+  .xl\:after\:w-6::after {
+    content: var(--tw-content);
+    width: 1.5rem;
+  }
+
+  .xl\:after\:bg-white::after {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(246 250 255 / var(--tw-bg-opacity));
   }
 }
