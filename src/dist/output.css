@@ -792,10 +792,6 @@ video {
   width: 2.25rem;
 }
 
-.w-\[1px\] {
-  width: 1px;
-}
-
 .w-\[230px\] {
   width: 230px;
 }
@@ -1663,7 +1659,7 @@ video {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1400px) {
   .xl\:relative {
     position: relative;
   }
@@ -1897,6 +1893,10 @@ video {
 
   .xl\:pt-\[108px\] {
     padding-top: 108px;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 
   .xl\:text-justify {
