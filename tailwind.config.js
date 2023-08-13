@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1600px",
+    },
     extend: {
       transformOrigin: {
         hamburger: "left center",
@@ -15,6 +22,7 @@ module.exports = {
         Aboutus_Hero: "url('../assets/about_us_hero_background.png')",
       },
       spacing: {
+        smallDesktop: "50px",
         desktop: "250px",
         mobile: "16px",
         sectionSpace: "120px",
@@ -85,4 +93,3 @@ module.exports = {
   },
   plugins: [],
 };
-

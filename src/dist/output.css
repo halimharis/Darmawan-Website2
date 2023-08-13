@@ -680,10 +680,6 @@ video {
   margin-top: 2.25rem;
 }
 
-.mt-72 {
-  margin-top: 18rem;
-}
-
 .block {
   display: block;
 }
@@ -996,10 +992,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-tl-\[40px\] {
-  border-top-left-radius: 40px;
-}
-
 .border {
   border-width: 1px;
 }
@@ -1274,10 +1266,6 @@ video {
 
 .pt-32 {
   padding-top: 8rem;
-}
-
-.pt-72 {
-  padding-top: 18rem;
 }
 
 .text-center {
@@ -1640,6 +1628,11 @@ video {
     flex-direction: row;
   }
 
+  .lg\:px-smallDesktop {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1679,6 +1672,10 @@ video {
     margin-bottom: 3rem;
   }
 
+  .xl\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
   .xl\:mb-28 {
     margin-bottom: 7rem;
   }
@@ -1687,16 +1684,8 @@ video {
     margin-bottom: 0.75rem;
   }
 
-  .xl\:mb-52 {
-    margin-bottom: 13rem;
-  }
-
   .xl\:mt-12 {
     margin-top: 3rem;
-  }
-
-  .xl\:mb-24 {
-    margin-bottom: 6rem;
   }
 
   .xl\:block {
@@ -1709,10 +1698,6 @@ video {
 
   .xl\:hidden {
     display: none;
-  }
-
-  .xl\:h-\[calc\(0\.56_\*_100vw\)\] {
-    height: calc(0.56 * 100vw);
   }
 
   .xl\:h-auto {
@@ -1838,34 +1823,9 @@ video {
     padding-right: 6rem;
   }
 
-  .xl\:px-72 {
-    padding-left: 18rem;
-    padding-right: 18rem;
-  }
-
-  .xl\:px-80 {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-
   .xl\:px-9 {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
-  }
-
-  .xl\:px-\[196px\] {
-    padding-left: 196px;
-    padding-right: 196px;
-  }
-
-  .xl\:px-\[260px\] {
-    padding-left: 260px;
-    padding-right: 260px;
-  }
-
-  .xl\:px-desktop {
-    padding-left: 250px;
-    padding-right: 250px;
   }
 
   .xl\:py-14 {
@@ -2022,27 +1982,17 @@ video {
   }
 }
 
-@media (min-width: 1536px) {
-  .\32xl\:mb-\[106px\] {
-    margin-bottom: 106px;
-  }
-
+@media (min-width: 1600px) {
   .\32xl\:mb-52 {
     margin-bottom: 13rem;
   }
 
+  .\32xl\:block {
+    display: block;
+  }
+
   .\32xl\:h-\[calc\(0\.56_\*_100vw\)\] {
     height: calc(0.56 * 100vw);
-  }
-
-  .\32xl\:min-h-fit {
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-
-  .\32xl\:px-desktop {
-    padding-left: 250px;
-    padding-right: 250px;
   }
 
   .\32xl\:px-72 {
@@ -2053,5 +2003,15 @@ video {
   .\32xl\:px-80 {
     padding-left: 20rem;
     padding-right: 20rem;
+  }
+
+  .\32xl\:px-\[196px\] {
+    padding-left: 196px;
+    padding-right: 196px;
+  }
+
+  .\32xl\:px-desktop {
+    padding-left: 250px;
+    padding-right: 250px;
   }
 }
