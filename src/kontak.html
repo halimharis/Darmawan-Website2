@@ -152,29 +152,40 @@
           >
             <div class="flex flex-col gap-10 w-full">
               <input
+                id="name"
+                name="Name"
                 placeholder="Your Name Here"
                 class="bg-transparent text-zinc-300 border-b py-4 text-lg font-Outfit leading-relaxed outline-none"
               />
               <input
+                id="email"
+                name="EMail"
                 placeholder="Your Mail Here"
                 class="bg-transparent text-zinc-300 border-b py-4 text-lg font-Outfit leading-relaxed outline-none"
               />
               <input
+                id="phoneNumber"
+                name="PhoneNumber"
                 placeholder="Your Phone Number"
                 class="bg-transparent text-zinc-300 border-b py-4 text-lg font-Outfit leading-relaxed outline-none"
               />
               <input
+                id="service"
+                name="Service"
                 placeholder="What Service You Want"
                 class="bg-transparent text-zinc-300 border-b py-4 text-lg font-Outfit leading-relaxed outline-none"
               />
             </div>
             <div class="flex flex-col w-full gap-7">
               <textarea
+                id="message"
+                name="Message"
                 class="bg-transparent border border-white h-48 p-6 text-lg font-Outfit leading-relaxed text-white"
                 placeholder="Your Message"
               ></textarea>
               <button
-                type="submit"
+                onclick="sendMail()"
+                type="button"
                 class="py-7 px-16 block w-fit bg-yellow text-blue text-xl font-medium self-end xl:self-auto"
               >
                 Send Message

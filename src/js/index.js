@@ -39,3 +39,32 @@ function scrollInto(element) {
     inline: "center",
   });
 }
+
+function sendMail(event) {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phoneNumber = document.getElementById("phoneNumber").value;
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value;
+  const formattedMessage = message.replace(/(?:\r\n|\r|\n)/g, "%0D");
+
+  // console.log(formattedMessage);
+  window.location.href =
+    "mailto:dyp.lawoffice@gmail.com?subject=Darmawan on Website - " +
+    service +
+    "&body=" +
+    formattedMessage +
+    "%0D" +
+    "%0D" +
+    "You can call or email me back to" +
+    "%0D" +
+    phoneNumber +
+    "%0D" +
+    email +
+    "%0D" +
+    "%0D" +
+    "Best Regards," +
+    "%0D" +
+    name +
+    "%0D%0D";
+}
