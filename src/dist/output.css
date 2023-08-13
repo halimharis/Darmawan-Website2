@@ -550,10 +550,6 @@ video {
   bottom: -2rem;
 }
 
-.-left-16 {
-  left: -4rem;
-}
-
 .-left-8 {
   left: -2rem;
 }
@@ -720,10 +716,6 @@ video {
   height: 12rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-\[120px\] {
   height: 120px;
 }
@@ -734,6 +726,10 @@ video {
 
 .h-\[25px\] {
   height: 25px;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .h-\[38px\] {
@@ -762,14 +758,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[300px\] {
-  height: 300px;
 }
 
 .min-h-screen {
@@ -831,10 +819,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .shrink-0 {
@@ -906,6 +890,18 @@ video {
 
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-end {
@@ -1052,6 +1048,16 @@ video {
   border-color: rgb(246 250 255 / var(--tw-border-opacity));
 }
 
+.border-red-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 242 242 / var(--tw-border-opacity));
+}
+
+.border-red-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
 .border-b-transparent {
   border-bottom-color: transparent;
 }
@@ -1136,19 +1142,9 @@ video {
   background-position: center;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-6 {
@@ -1639,6 +1635,18 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:left-16 {
+    left: 4rem;
+  }
+
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1693,6 +1701,14 @@ video {
 @media (min-width: 1400px) {
   .xl\:relative {
     position: relative;
+  }
+
+  .xl\:-left-16 {
+    left: -4rem;
+  }
+
+  .xl\:-right-16 {
+    right: -4rem;
   }
 
   .xl\:mb-12 {
@@ -1771,6 +1787,10 @@ video {
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
