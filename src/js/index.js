@@ -11,7 +11,6 @@ function next() {
   carouselPosition = carouselPosition + 1;
   if (carouselPosition === navigation.children.length) carouselPosition = 0;
   pagination[carouselPosition].checked = true;
-  console.log(pagination);
   scrollInto(navigation);
 }
 
@@ -28,7 +27,6 @@ function prev() {
 function goToPagination(number) {
   const navigation = document.getElementById("carousel-wrapper");
   carouselPosition = number;
-  console.log("masok");
   scrollInto(navigation);
 }
 
@@ -48,7 +46,6 @@ function sendMail(event) {
   const message = document.getElementById("message").value;
   const formattedMessage = message.replace(/(?:\r\n|\r|\n)/g, "%0D");
 
-  // console.log(formattedMessage);
   window.location.href =
     "mailto:dyp.lawoffice@gmail.com?subject=Darmawan on Website - " +
     service +
