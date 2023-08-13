@@ -720,6 +720,10 @@ video {
   height: 12rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[120px\] {
   height: 120px;
 }
@@ -760,8 +764,8 @@ video {
   height: 100vh;
 }
 
-.min-h-\[50vh\] {
-  min-height: 50vh;
+.h-\[600px\] {
+  height: 600px;
 }
 
 .min-h-screen {
